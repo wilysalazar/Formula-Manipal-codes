@@ -1,0 +1,14 @@
+class helloWorld:
+    def __init__(self, first):
+        self.first = first
+
+hello = helloWorld("Hello World")
+print(hello.first)
+
+
+class introduction:
+    def __init__(self, introduction):
+        self.introduction = introduction
+
+introduction = introduction("Hi I am a student of MIT")
+print(introduction.introduction)
