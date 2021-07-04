@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+public class calculator {
+    public static void main(String[] args) {
+        Scanner userScan = new Scanner(System.in);
+        System.out.println("Reference");
+        System.out.println("1 - addition");
+        System.out.println("2 - subtraction");
+        System.out.println("3 - multiplication");
+        System.out.println("4 - sin");
+        System.out.println("5 - cos");
+        System.out.println("6 - tan");
+        System.out.println("7 - exponential");
+        int number = userScan.nextInt();
+
+        if (number == 1) {
+            System.out.print("First number: ");
+            int x = userScan.nextInt();
+            System.out.print("Second number: ");
+            int y = userScan.nextInt();
+            int sum = (x + y);
+            System.out.println("The addition of " +x+ " and " +y+ " is " +sum+ "." );
+        }
+
+        else if (number == 2) {
+            System.out.print("First number: ");
+            int p = userScan.nextInt();
+            System.out.print("Second number: ");
+            int q = userScan.nextInt();
+            int diff = (p - q);
+            System.out.println("Subtracting " +q+ " from " +p+ " gives " +diff+ "." );
+        }
+
+        else if (number == 3) {
+            System.out.print("First number: ");
+            int m = userScan.nextInt();
+            System.out.print("Second number: ");
+            int n = userScan.nextInt();
+            int product = (m * n);
+            System.out.println("The multiplication of " +m+ " and " +n+ " is " +product+ "." );
+        }
+
+        else if (number == 4) {
+            System.out.print("Angle in degrees: ");
+            double degree1 = userScan.nextDouble();
+            double radian1 = Math.toRadians(degree1);
+            System.out.println("The sin of " +degree1+ " degrees is " +Math.sin(radian1)+ "." );
+        }
+
+        else if (number == 5) {
+            System.out.print("Angle in degrees: ");
+            double degree2 = userScan.nextDouble();
+            double radian2 = Math.toRadians(degree2);
+            System.out.println("The cos of " +degree2+ " degrees is " +Math.cos(radian2)+ "." );
+        }
+
+        else if (number == 6) {
+            System.out.print("Angle in degrees: ");
+            double degree3 = userScan.nextDouble();
+            double radian3 = Math.toRadians(degree3);
+            System.out.println("The tan of " +degree3+ " degrees is " +Math.tan(radian3)+ "." );
+        }
+
+        else if (number == 7) {
+            System.out.print("First number: ");
+            double i = userScan.nextDouble();
+            System.out.print("Second number: ");
+            double j = userScan.nextDouble();
+            double result4 = (Math.pow(i,j));
+            System.out.println(+ i + " to the power of " + j + " equals " + result4 + ".");
+        }
+
+        else
+            System.out.println("Enter number between 1 and 7");
+
+    }
+}
