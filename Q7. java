@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class string {
+
+    public static void main(String[] args) {
+
+        String str1, str2;
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.println("First string:");
+        str1 = userInput.nextLine();
+
+        System.out.println("Second string:");
+        str2 = userInput.nextLine();
+
+        if (str1.equals(str2))
+            System.out.print("The strings are equal.");
+        else
+            System.out.print("The strings are not equal.");
+    }
+}
