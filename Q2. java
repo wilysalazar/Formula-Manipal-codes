@@ -1,0 +1,18 @@
+  
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner userValue = new Scanner(System.in);
+        System.out.println("Enter your desired string, integer, char and double");
+
+        String myString = userValue.nextLine();
+        int integer = userValue.nextInt();
+        char character = userValue.next().charAt(0);
+        double ddouble = userValue.nextDouble();
+
+        System.out.println("String: " + myString);
+        System.out.println("Integer: " + integer);
+        System.out.println("Character: " + character);
+        System.out.println("Double: " + ddouble);
+    }
+}
