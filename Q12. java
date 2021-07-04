@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class laptime {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.println("First lap time in mm:ss:msms : ");
+        String a = userInput.nextLine();
+        System.out.println("Second lap time in mm:ss:msms : ");
+        String b = userInput.nextLine();
+        System.out.println("Third lap time in mm:ss:msms : ");
+        String c = userInput.nextLine();
+
+        int temp1 = Integer.parseInt(a);
+        int temp2 = Integer.parseInt(b);
+        int temp3 = Integer.parseInt(c);
+
+        int temp = temp1 < temp2 ? temp1 : temp2;
+        int finaL = temp3 < temp ? temp3 : temp;
+
+        String d = Integer.toString(finaL);
+
+        String mm = d.substring(0,2);
+        String ss = d.substring(2,4);
+        String msms = d.substring(4,6);
+
+        System.out.println("The fastest lap time is " +mm+ ":" +ss+ ":"  +msms+ ".");
+    }
+}
