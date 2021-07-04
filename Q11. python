@@ -1,0 +1,6 @@
+x = int(input("First number: "))
+y = int(input("Second number: "))
+
+sub = x + (~y + 1)
+
+print("The difference between the two numbers is ", sub, ".")
