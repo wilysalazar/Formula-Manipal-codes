@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class ascii {
+    public static void main(String[] args) {
+        int a;
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("1 - Convert ASCII values to a string");
+        System.out.println("2 - Convert a string to its ASCII values");
+        int input = userInput.nextInt();
+
+        if (input != 1) {
+            if (input != 2)
+                System.out.print("Enter only 1 or 2.");
+        }
+
+        if (input == 1) {
+            System.out.print("Total number of ASCII values : ");
+            a = userInput.nextInt();
+
+            int[] array = new int[a];
+
+            System.out.println("Individual ASCII value : ");
+            for (int i = 0; i < a; i++) {
+                array[i] = userInput.nextInt();
+            }
+
+            System.out.print("String is : ");
+
+            for (int i = 0; i < a; i++) {
+                System.out.print((char) array[i]);
+            }
+        }
+
+        else if (input == 2) {
+            Scanner obj = new Scanner(System.in);
+
+            System.out.print("String : ");
+            String str = obj.nextLine();
+
+            int stringLength = str.length();
+
+            for (int j = 0; j < stringLength; j++) {
+                char chrt = str.charAt(j);
+                System.out.println(chrt + " = " + (int) chrt);
+            }
+        }
+    }
+}
