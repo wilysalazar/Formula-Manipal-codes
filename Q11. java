@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class subtractWithoutOpr {
+    public static void main (String[] args) {
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.println("First integer : ");
+        int a = userInput.nextInt();
+
+        System.out.println("Second integer : ");
+        int b = userInput.nextInt();
+
+        int ans = a + (~b + 1);
+
+        System.out.println("The difference is " +ans+ ".");
+    }
+}
