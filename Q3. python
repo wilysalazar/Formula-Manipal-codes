@@ -1,0 +1,6 @@
+a = int(input("Number of rows : "))
+
+for b in range(0,a):
+    for c in range(0,b+1):
+        print("*", end= "")
+    print()
