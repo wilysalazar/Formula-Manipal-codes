@@ -1,0 +1,30 @@
+package com.codewithande;
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        String[] a = new String[4];
+        Scanner userInput = new Scanner(System.in);
+        System.out.print("enter time 1 mm:ss:msms format");
+        a[1] = userInput.nextLine();
+        System.out.print("enter time 2 mm:ss:msms format");
+        a[2] = userInput.nextLine();
+        System.out.print("enter time 3 mm:ss:msms format");
+        a[3] = userInput.nextLine();
+
+
+        int t1 = ((Integer.parseInt(a[1].substring(0,2)))*60000)+((Integer.parseInt(a[1].substring(2,4)))*1000)+(Integer.parseInt(a[1].substring(4,6)));
+        int t2 = ((Integer.parseInt(a[2].substring(0,2)))*60000)+((Integer.parseInt(a[2].substring(2,4)))*1000)+(Integer.parseInt(a[2].substring(4,6)));;
+        int t3 = ((Integer.parseInt(a[3].substring(0,2)))*60000)+((Integer.parseInt(a[3].substring(2,4)))*1000)+(Integer.parseInt(a[3].substring(4,6)));
+        int max = (Math.min(Math.min(t1,t3),t2));
+        long minutes = (max / 1000) / 60;
+        long seconds = (max / 1000) % 60;
+        long ms= max-((minutes*60000)+(seconds*1000));
+        System.out.println(minutes+":"+seconds+":"+ms);
+
+
+    }
+
+
+}
