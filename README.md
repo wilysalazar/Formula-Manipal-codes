@@ -1,1 +1,4 @@
-# Formula-Manipal-codes
+# python-codes
+
+this branch contains python codes assigned.
+
