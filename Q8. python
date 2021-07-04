@@ -1,0 +1,12 @@
+userInput = int(input("Integer: "))
+temp = userInput
+rev = 0
+
+while (userInput > 0):
+    dig = userInput % 10
+    rev = rev * 10 + dig
+    userInput = userInput//10
+if (temp == rev):
+    print("The integer is a palindrome.")
+else:
+    print("The integer is not a palindrome.")
