@@ -1,9 +1,7 @@
 # Formula-Manipal-codes
 
-The branch 'java-Codes' contains all the java codes.
+"java-codes" branch has the assigned java codes from the Formula Manipal taskphase.
 
-The branch 'python-Codes' contains all the python codes.
+"python-codes" branch has the assigned python codes from the Formula Manipal taskphase
 
-The branch 'sw-codes' contains all the codes given in the Software Sub-Subsystem of FM. Each new task (set of codes) will be kept in a new folder inside that branch.
-
-In each branch, and each folder, the questions are listed in their respective README files.
+"sw-codes" branch has the assigned codes in the software subsystem of the Formula Manipal taskphase within their respective folders.
