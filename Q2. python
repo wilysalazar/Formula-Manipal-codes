@@ -1,0 +1,9 @@
+string = input("String : ")
+integer = input("Integer: ")
+character = input("Character: ")
+double = input("Decimal number: ")
+
+print("String is ", string)
+print("Integer is ", integer)
+print("Character is ", character)
+print("Decimal number is ", double)
