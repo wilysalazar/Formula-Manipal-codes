@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Enter string :");
+        String srg = userInput.nextLine();
+        int a = srg.length();
+        int b=0;
+        for(int c=0;c<a;c++)
+        {
+            if(srg.charAt(c)=='A'|| srg.charAt(c)=='E'||srg.charAt(c)=='I'||srg.charAt(c)=='O'||srg.charAt(c)=='U'||srg.charAt(c)=='a'|| srg.charAt(c)=='e'||srg.charAt(c)=='i'||srg.charAt(c)=='o'||srg.charAt(c)=='u') {
+                b++;
+            }
+        }
+        System.out.println(b);
+    }
+
+}
