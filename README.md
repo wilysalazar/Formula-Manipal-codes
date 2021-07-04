@@ -1,1 +1,4 @@
-# Formula-Manipal-codes
+# java-codes
+
+this branch contains java codes assigned.
+
