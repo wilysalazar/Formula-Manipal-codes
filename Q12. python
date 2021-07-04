@@ -1,0 +1,18 @@
+time1 = input("First lap time in mm:ss:msms : ")
+time2 = input("Second lap time in mm:ss:msms : ")
+time3 = input("Third lap time in mm:ss:msms : ")
+
+i = int(time1)
+j = int(time2)
+k = int(time3)
+
+temp = i if i < j else j
+res = k if k < temp else temp
+
+x = str(res)
+
+mm = x[0:2]
+ss = x[2:4]
+msms = x[4:6]
+
+print("The fastest lap time is ", mm, ":", ss, ":", msms, ".")
