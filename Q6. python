@@ -1,0 +1,53 @@
+import math
+
+print("Reference\n")
+print("1 - addition\n")
+print("2 - subtraction\n")
+print("3 - multiplication\n")
+print("4 - sin\n")
+print("5 - cos\n")
+print("6 - tan\n")
+print("7 - exponential\n")
+digit = int(input("Enter: "))
+
+if digit == 1:
+    a = int(input("First number: "))
+    b = int(input("Second number: "))
+    addition = a + b
+    print("The addition of ", a, " and ", b, " is ", addition, ".")
+
+elif digit == 2:
+    c = int(input("First number: "))
+    d = int(input("Second number: "))
+    subtraction = c - d
+    print("Subtracting ", d, " from ", c, " gives ", subtraction, ".")
+
+elif digit == 3:
+    e = int(input("First number: "))
+    f = int(input("Second number: "))
+    multiplication = e * f
+    print("The multiplication of ", e, " and ", f, " is ", multiplication, ".")
+
+elif digit == 4:
+    deg1 = float(input("Angle in degrees: "))
+    rad1 = float(math.radians(deg1))
+    print("The sin of ", deg1, " degrees is ", float(math.sin(rad1)), ".")
+
+elif digit == 5:
+    deg2 = float(input("Angle in degrees: "))
+    rad2 = float(math.radians(deg2))
+    print("The cos of ", deg2, " degrees is ", float(math.cos(rad2)), ".")
+
+elif digit == 6:
+    deg3 = float(input("Angle in degrees: "))
+    rad3 = float(math.radians(deg3))
+    print("The tan of ", deg3, " degrees is ", float(math.tan(rad3)), ".")
+
+elif digit == 7:
+    g = int(input("First number: "))
+    h = int(input("Second number: "))
+    exponential = g ** h
+    print(g, " to the power of ", h, " equals ", exponential, ".")
+
+else:
+    print("Enter only  1 to 7.")
