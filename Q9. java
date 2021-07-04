@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class accelerator {
+    public static void main(String[] args) {
+        long startTime = 0;
+        long endTime = 0;
+        int uInput2 = 2;
+
+        Scanner sc = new Scanner(System.in);
+        int uInput1 = sc.nextInt();
+
+        if (uInput1 == 1) {
+            startTime = System.nanoTime();
+            uInput2 = sc.nextInt();
+
+            if (uInput2 == 1) {
+                endTime = System.nanoTime();
+                long time = (endTime - startTime);
+                float stopwatch = (float) time / 1000000000;
+                System.out.print("Acceleration Time is " + stopwatch + " seconds.");
+            }
+        }
+
+        else if (uInput1 == 2) {
+
+            startTime = System.nanoTime();
+
+            while (uInput2 != 0) {
+                uInput2 = sc.nextInt();
+
+                if (uInput2 == 1) {
+                    endTime = System.nanoTime();
+                    long time = (endTime - startTime);
+                    float stopwatch = (float) time / 1000000000;
+                    System.out.print("Lap Time is " + stopwatch + " seconds.");
+                    startTime = endTime;
+                }
+
+                else if (uInput2 == 0) {
+                    System.out.print("Program END");
+                }
+            }
+        }
+    }
+}
