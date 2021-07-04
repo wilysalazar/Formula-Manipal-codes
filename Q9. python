@@ -1,0 +1,29 @@
+import time
+input3 = 2
+
+input1 = int(input("1 - start acceleration timing.\n2 - start lap timing.\n"))
+
+if input1 == 1:
+    start1 = time.time()
+
+    input2 = int(input("1 - when you want to get the acceleration time.\n"))
+    end1 = time.time()
+
+    elap1 = end1 - start1
+    print("The acceleration time is ", elap1, " seconds.")
+
+elif input1 == 2:
+    start2 = time.time()
+
+    while input3 != 0:
+
+        input3 = int(input("1 - when the next lap starts.\n0 - the program stops.\n"))
+
+        if input3 == 1:
+             end2 = time.time()
+             elapsed2 = end2 - start2
+             print("The lap time is ", elapsed2, " seconds.")
+             start2 = end2
+
+        elif input3 == 0:
+            print("Program END")
