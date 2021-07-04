@@ -1,0 +1,15 @@
+arr = []
+number = int(input("Number of elements : "))
+
+for n in range(number):
+    value = int(input("Enter the %d element of the list : " %n))
+    arr.append(value)
+
+for n in range(number -1):
+    for j in range(number - n - 1):
+        if(arr[j] > arr[j + 1]):
+             temp = arr[j]
+             arr[j] = arr[j + 1]
+             arr[j + 1] = temp
+
+print("Sorted list : ", arr)
