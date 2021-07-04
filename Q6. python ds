@@ -1,0 +1,51 @@
+import math
+
+def addt(x,y):
+    return x+y
+
+def subt(x,y):
+    return x-y
+
+def mult(x,y):
+    return x*y
+
+def sin(x):
+    return math.sin(math.radians(x))
+
+def cos(x):
+    return math.cos(math.radians(x))
+
+def tan(x):
+    return math.tan(math.radians(x))
+
+def power(x,y):
+    return pow(x,y)
+
+mathtuple = (1,2,3,4,5,6,7)
+(addition, subtraction, multiplication, sine, cosine, tangent, powers) = mathtuple
+
+x = input("Mathematical function: ")
+
+if x in ('addition', 'subtraction', 'multiplication', 'powers'):
+    n1 = input("First number: ")
+    n2 = input("Second number: ")
+    n1 = float(n1)
+    n2 = float(n2)
+else:
+    n1 = input("Enter the angle: ")
+    n1 = float(n1)
+
+if x == 'addition':
+    print("The sum of ", n1, " & ", n2," = ", add(n1, n2))
+elif x == 'subtraction':
+    print("The subtraction of ", n1, "&", n2,"=", sub(n1, n2))
+elif x == 'multiplication':
+    print("The multiplication of ", n1, " & ", n2,"=", mul(n1, n2))
+elif x == 'sine':
+    print("The value of sin(", n1, ") = ", sin(n1))
+elif x == 'cosine':
+    print("The value of cos(", n1, ") = ", cos(n1))
+elif x == 'tangent':
+    print("The value of tan", n1, ") = ", tan(n1))
+elif x == 'powers':
+    print("The power of ", n1, "^", n2," = ", power(n1, n2))
